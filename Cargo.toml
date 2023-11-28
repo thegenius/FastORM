@@ -3,7 +3,7 @@ name = "FastORM"
 version = "0.1.0"
 edition = "2021"
 license-file = "LICENSE"
-descrpiton = "ORM based on sqlx"
+description = "ORM based on sqlx"
 homepage = "https://github.com/thegenius/FastORM"
 
 

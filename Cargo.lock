@@ -7,8 +7,8 @@ name = "FastORM"
 version = "0.1.0"
 dependencies = [
  "async-trait",
- "common-trait",
- "derive-macro",
+ "fastorm-macro",
+ "fastorm-trait",
  "path-absolutize",
  "serde",
  "serde_json",
@@ -166,15 +166,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
-name = "common-trait"
-version = "0.1.0"
-dependencies = [
- "async-trait",
- "serde",
- "sqlx",
-]
-
-[[package]]
 name = "const-oid"
 version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -245,17 +236,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "derive-macro"
-version = "0.1.0"
-dependencies = [
- "common-trait",
- "proc-macro2",
- "quote",
- "sqlx",
- "syn 1.0.109",
-]
-
-[[package]]
 name = "digest"
 version = "0.10.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -314,6 +294,26 @@ name = "event-listener"
 version = "2.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0206175f82b8d6bf6652ff7d71a1e27fd2e4efde587fd368662814d6ec1d9ce0"
+
+[[package]]
+name = "fastorm-macro"
+version = "0.1.0"
+dependencies = [
+ "fastorm-trait",
+ "proc-macro2",
+ "quote",
+ "sqlx",
+ "syn 1.0.109",
+]
+
+[[package]]
+name = "fastorm-trait"
+version = "0.1.0"
+dependencies = [
+ "async-trait",
+ "serde",
+ "sqlx",
+]
 
 [[package]]
 name = "fastrand"
@@ -1080,9 +1080,9 @@ dependencies = [
 
 [[package]]
 name = "spki"
-version = "0.7.2"
+version = "0.7.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9d1e996ef02c474957d681f1b05213dfb0abab947b446a62d37770b23500184a"
+checksum = "d91ed6c858b01f942cd56b37a94b3e0a1798290327d1236e4d9cf4eaca44d29d"
 dependencies = [
  "base64ct",
  "der",

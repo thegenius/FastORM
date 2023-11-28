@@ -1,9 +1,9 @@
-use common_trait::CmpOperator;
-use common_trait::Location;
-use common_trait::LocationExpr;
-use common_trait::Selection;
-use derive_macro::Location;
-use derive_macro::Selection;
+use fastorm_trait::CmpOperator;
+use fastorm_trait::Location;
+use fastorm_trait::LocationExpr;
+use fastorm_trait::Selection;
+use fastorm_macro::Location;
+use fastorm_macro::Selection;
 use serde::{Deserialize, Serialize};
 use serde_json;
 use sqlx::any::AnyArguments;

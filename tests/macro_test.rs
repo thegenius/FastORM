@@ -1,5 +1,5 @@
-use common_trait::Entity;
-use derive_macro::Entity;
+use fastorm_macro::Entity;
+use fastorm_trait::Entity;
 use sqlx::any::AnyArguments;
 use sqlx::any::AnyRow;
 use sqlx::Arguments;

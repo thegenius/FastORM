@@ -1,10 +1,10 @@
 use async_trait::async_trait;
-use common_trait::merge_any_arguments;
-use common_trait::GenericDaoMapper;
-use common_trait::{
+use fastorm_trait::merge_any_arguments;
+use fastorm_trait::GenericDaoMapper;
+use fastorm_trait::{
     CmpOperator, Entity, Location, LocationExpr, Mutation, Primary, SelectedEntity, Selection,
 };
-use derive_macro::{Entity, Location, Mutation, Primary, SelectedEntity, Selection};
+use fastorm_macro::{Entity, Location, Mutation, Primary, SelectedEntity, Selection};
 use path_absolutize::*;
 use sqlx::any::AnyConnectOptions;
 use sqlx::database::{Database, HasArguments};

@@ -11,8 +11,8 @@ homepage = "https://github.com/thegenius/FastORM"
 
 
 [dependencies]
-fastorm-trait = { path = "fastorm-trait", version = "*" }
-fastorm-macro = { path = "fastorm-macro", version = "*" }
+fastorm-trait = { path = "fastorm-trait", version = "0.1.0" }
+fastorm-macro = { path = "fastorm-macro", version = "0.1.0" }
 
 async-trait = {version = "0.1.74"}
 serde = {version = "1.0", features = ["derive"]}

@@ -24,4 +24,7 @@ tokio = {verison = "1.34.0", features = ["full"]}
 path-absolutize = "3.1.1"
 
 [workspace]
-members = ["common-trait", "derive-macro"]
+members = [
+  "common-trait", 
+  "derive-macro"
+]

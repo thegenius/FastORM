@@ -9,8 +9,8 @@ license-file = "LICENSE"
 
 
 [dependencies]
-common-trait = {version = "*", path = "common-trait" }
-derive-macro = {version = "*", path = "derive-macro" }
+common-trait = { path = "common-trait", version = "*" }
+derive-macro = { path = "derive-macro", version = "*" }
 
 async-trait = {version = "0.1.74"}
 serde = {version = "1.0", features = ["derive"]}

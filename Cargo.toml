@@ -3,14 +3,16 @@ name = "FastORM"
 version = "0.1.0"
 edition = "2021"
 license-file = "LICENSE"
+descrpiton = "ORM based on sqlx"
+homepage = "https://github.com/thegenius/FastORM"
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 
 [dependencies]
-common-trait = { path = "common-trait", version = "*" }
-derive-macro = { path = "derive-macro", version = "*" }
+common-trait = { path = "./common-trait", version = "*" }
+derive-macro = { path = "./derive-macro", version = "*" }
 
 async-trait = {version = "0.1.74"}
 serde = {version = "1.0", features = ["derive"]}
